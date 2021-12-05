@@ -1,0 +1,33 @@
+
+<div style="color: #c2bdbd">
+<span ><small >GST Details</small>  </span>
+<span ><small> Live Mode</small>  </span>
+<span class="dot"></span>
+<span class="material-icons">
+  arrow_drop_down
+  </span>
+
+  <span class="material-icons">
+    notifications_none
+    </span>
+
+
+<button [matMenuTriggerFor]="profile" mat-icon-button class="m-r-5"> <img src="assets/images/users/3.jpg" alt="user" class="profile-pic"> </button>
+<span><small>Harry</small></span>
+<mat-menu [ngStyle]="{'background':'white'}" #profile="matMenu" class="mymegamenu">
+    <button mat-menu-item>
+        <mat-icon>settings</mat-icon> Settings </button>
+    <button mat-menu-item>
+        <mat-icon>account_box</mat-icon> Profile </button>
+    <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon> Disable notifications </button>
+    <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon> Sign Out </button>
+</mat-menu>
+
+<span class="material-icons">
+  expand_more
+  </span>
+
+
+</div>
